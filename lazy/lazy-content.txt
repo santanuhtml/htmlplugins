@@ -1,0 +1,58 @@
+jQuery Lazy
+source:
+http://jquery.eisbehr.de/lazy/
+
+NOTE:
+***add a image size to apply lazy!!!
+** Add this external JS LINK & JS CODE just after jQuery libary link for
+   better Performance
+
+------------------------
+HTML
+------------------------
+
+<img class="lazy" data-src="https://picsum.photos/id/2/600/400" />
+<br />
+<img class="lazy" data-src="https://picsum.photos/id/3/600/400" />
+<br />
+<img class="lazy" data-src="https://picsum.photos/id/4/600/400" />
+<br />
+<img class="lazy" data-src="https://picsum.photos/id/5/600/400" />
+<br />
+<img class="lazy" data-src="https://picsum.photos/id/6/600/400" />
+<br />
+<img class="lazy" data-src="https://picsum.photos/id/7/600/400" />
+<br />
+<img class="lazy" data-src="https://picsum.photos/id/8/600/400" />
+<br />
+<img class="lazy" data-src="https://picsum.photos/id/9/600/400" />
+<br />
+<img class="lazy" data-src="https://picsum.photos/id/10/600/400" />
+<br />
+
+------------------------
+CSS
+------------------------
+
+.img-responsive{
+  max-width: 100%;
+}
+img{
+  margin-bottom: 50px;
+  width: 600px; 
+  height: auto;
+}
+
+------------------------
+JS link
+------------------------
+
+<script type="text/javascript" src="jquery.lazy.min.js"></script>
+
+------------------------
+JS
+------------------------
+
+$(function() {
+   $('.lazy').Lazy();
+});
