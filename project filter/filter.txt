@@ -80,11 +80,17 @@ css
     padding: 1rem 2rem;
 }
 .simplefilter li {
-    background-color: #585858;
-    margin-bottom: 10px;
+  background-color: #0d2c4a;
+  margin-bottom: 10px;
+  border-radius: 22px;
+  font-size: 13px;
+  line-height: 1.3;
+  margin-right: 5px;
 }
 .simplefilter li.active {
-    background-color: #212121;
+  background-color: #95e4bb;
+  color: #0d2c4a;
+  font-weight: 700;
 }
 .simplefilter{
    text-align: center;
