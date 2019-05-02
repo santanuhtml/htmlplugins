@@ -1,0 +1,21 @@
+//css
+.sy-slides-wrap {
+    max-height: 480px;
+    overflow: hidden;
+}
+
+<!-- slider -->
+<div class="slider">
+  <ul id="slippry-home">
+    <li><img src="img/background1.jpg"></li>
+    <li><img src="img/background1.jpg"></li>
+  </ul>
+</div>
+
+<!-- slider -->
+    <link rel="stylesheet" type="text/css" href="css/slider/slippry.css">
+
+<!-- slider -->
+    <script src="js/slider/slippry.min.js"></script>
+    <script src="js/slider/myscript.js"></script>
+    <script type="text/javascript" src="js/slider/sscr.js"></script>
