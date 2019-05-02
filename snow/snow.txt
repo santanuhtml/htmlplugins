@@ -1,0 +1,35 @@
+URL:https://www.jqueryscript.net/animation/Realistic-Snow-Falling-Effect-with-jQuery-CSS3-snow-js.html
+
+
+1. add this class on background:
+
+<body class="background">
+
+note:we may have to edit background class from snow.css file.
+
+===================
+
+2.add this css link in header:
+
+<link href="assets/css/snow.css" rel="stylesheet">
+
+===================
+
+3.add this js link and js code on footer:
+
+<script type="text/javascript" src="assets/plugins/snow.js"></script>
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <span class="hidden" id="snowflake">&#10052;</span>
+
+===================
