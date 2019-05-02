@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="scrollbox3">
+    <h1>New Scrolling Window</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a justo erat, volutpat hendrerit dolor. Sed urna nibh, dapibus at egestas non, vulputate ut quam. Morbi a erat tristique tellus varius venenatis. Aenean lacinia sem eget turpis fringilla commodo. Sed lorem nisi, viverra a interdum nec, varius eu enim. Donec ornare, nunc quis eleifend iaculis, nulla eros mollis tellus, quis faucibus risus odio non lectus. Maecenas ac velit non metus rhoncus commodo. Nunc ligula est, ultricies sed mattis sed, dapibus at arcu. Maecenas lacinia nisl ut sem bibendum ac condimentum purus facilisis. Curabitur ut nibh lobortis libero interdum vehicula vel quis nulla.</p>
+    
+    <p>Suspendisse et massa urna. Donec eu lorem nec felis dapibus aliquam viverra in quam. Suspendisse ultrices, nisi ac venenatis porttitor, erat turpis dapibus augue, sed rutrum nunc ante sed enim. Aliquam et tempus mi. Nullam malesuada, nunc a eleifend pretium, justo lorem tempus justo, id adipiscing dolor ipsum sed velit. Maecenas odio massa, feugiat vel sodales ut, placerat at quam. Cras viverra diam vitae diam elementum vitae aliquet erat tincidunt. Quisque fringilla neque in lacus tempor cursus. Curabitur eget nulla et nisi dignissim tempor vel non risus. Mauris ac ipsum metus, a auctor massa. Nunc eros ante, ullamcorper a mollis nec, aliquam sed est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+</div>
+<style type="text/css">
+  #scrollbox3 {
+    overflow: auto;
+    width: 400px;
+    height: 360px;
+    padding: 0 5px;
+    border: 1px solid #b7b7b7;
+}
+
+.track3 {
+    width: 10px;
+    background: rgba(0, 0, 0, 0);
+    margin-right: 2px;
+    border-radius: 10px;
+    -webkit-transition: background 250ms linear;
+    transition: background 250ms linear;
+}
+
+.track3:hover,
+.track3.dragging {
+    background: #d9d9d9; /* Browsers without rgba support */
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.handle3 {
+    width: 7px;
+    right: 0;
+    background: #999;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+    -webkit-transition: width 250ms;
+    transition: width 250ms;
+}
+
+.track3:hover .handle3,
+.track3.dragging .handle3 {
+    width: 10px;
+}
+</style>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="enscroll-0.6.1.min.js"></script>
+<script>
+  
+$('#scrollbox3').enscroll({
+    showOnHover: true,
+    verticalTrackClass: 'track3',
+    verticalHandleClass: 'handle3'
+});
+
+</script>
+  </body>
+</html>
