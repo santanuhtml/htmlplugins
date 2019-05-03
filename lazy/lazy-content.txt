@@ -12,6 +12,9 @@ NOTE:
 HTML
 ------------------------
 
+<!-- load background images of other element types -->
+<div class="lazy" data-src="path/to/image.jpg"></div>
+
 <img class="lazy" data-src="https://picsum.photos/id/2/600/400" />
 <br />
 <img class="lazy" data-src="https://picsum.photos/id/3/600/400" />
