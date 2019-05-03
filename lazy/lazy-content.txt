@@ -4,6 +4,7 @@ http://jquery.eisbehr.de/lazy/
 
 NOTE:
 ***add a image size to apply lazy!!!
+ **use 'data-src' in place of 'src' on img tag
 ** Add this external JS LINK & JS CODE just after jQuery libary link for
    better Performance
 
