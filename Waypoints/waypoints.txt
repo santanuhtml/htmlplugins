@@ -1,0 +1,77 @@
+				Waypoints
+
+Source:
+http://imakewebthings.com/waypoints/
+
+----------------------------
+HTML 
+----------------------------
+
+<div class="process-bar" id="process-bar">
+  <div class="process-color process1"></div>
+</div>
+<div class="process-bar" id="process-bar">
+  <div class="process-color process2"></div>
+</div>
+<div class="process-bar" id="process-bar">
+  <div class="process-color process3"></div>
+</div>
+<div class="process-bar" id="process-bar">
+  <div class="process-color process4"></div>
+</div>
+<div class="process-bar" id="process-bar">
+  <div class="process-color process5"></div>
+</div>
+
+----------------------------
+CSS
+----------------------------
+.process-bar{
+  width: 100%;
+  height: 7px;
+  background: #84bb9e;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.process-bar .process-color{
+  position: absolute;
+  background: #00418a;
+  width: 0%;
+  height: 20px;
+  -webkit-transition: all 3s;
+  -moz-transition: all 3s;
+  -o-transition: all 3s;
+  transition: all 3s;
+}
+
+----------------------------
+JS link
+----------------------------
+
+<!-- Waypoints -->
+<script src="js/waypoints.min.js"></script>
+
+----------------------------
+JS
+----------------------------
+
+$('#process-bar').waypoint(function() {
+  $(".process1").css({ 
+        width: "60%"
+      });
+  $(".process2").css({ 
+        width: "30%"
+      });
+  $(".process3").css({ 
+        width: "40%"
+      });
+  $(".process4").css({ 
+        width: "20%"
+      });
+  $(".process5").css({ 
+        width: "30%"
+      });
+
+}, { offset: 300 });
+
